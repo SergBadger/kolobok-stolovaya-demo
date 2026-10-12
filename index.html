@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow" data-publish>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Колобок – комплексное питание для вашей команды</title>
+<meta name="description" content="Корпоративное питание от сети народных столовых «Колобок»: свежие обеды, доставка по графику, собственное производство.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600&family=Unbounded:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="nav"></div>
+<main>
+
+<header class="hero"><div class="wrap">
+  <div>
+    <span class="chip">Корпоративным клиентам</span>
+    <h1>Комплексное питание для вашей команды</h1>
+    <p class="lead">Свежие обеды, доставка по расписанию, собственное производство. Заботимся о вашем коллективе каждый день.</p>
+    <div class="row"><button class="btn" data-open="corp">Начать сотрудничество</button><a class="btn alt" href="#menu">Смотреть меню</a></div>
+  </div>
+  <div class="plate-stage" aria-hidden="true">
+    <div class="plate p1"></div><div class="plate p2"></div>
+    <div class="plate p3">{{фото обеда}}<br>сюда встанет фото блюда</div>
+    <span class="tag t1">Доставка по графику</span><span class="tag t2">Своя кухня</span>
+  </div>
+</div></header>
+
+<section id="menu"><div class="wrap">
+  <div class="sec-head"><h2>Меню на этой неделе</h2><p>Сбалансированные обеды от шеф-повара. Это пример: на сайт встанет актуальное меню недели, а PDF можно скачать.</p></div>
+  <div id="week"></div>
+  <div class="row" style="margin-top:24px"><a class="btn alt sm" href="{{menu.pdf}}">Скачать PDF</a></div>
+</div></section>
+
+<section class="band" id="akcii"><div class="wrap split">
+  <div>
+    <h2>Для корпоративных клиентов</h2>
+    <p class="lead" style="margin-top:14px">Условия для компаний обсуждаем индивидуально: состав обедов, график, количество сотрудников.</p>
+    <ul style="list-style:none;padding:0;display:grid;gap:10px;margin:22px 0 28px">
+      <li>Пробная неделя обедов: {{условия акции}}</li>
+      <li>Скидка при заказе от {{N}} обедов в день: {{условия акции}}</li>
+      <li>Персональный менеджер на связи</li>
+    </ul>
+    <button class="btn" data-open="corp">Получить предложение</button>
+  </div>
+  <div class="ph" style="aspect-ratio:4/3;border-radius:22px;background-color:var(--card)">акции и спецпредложения – условия пришлёт заказчик</div>
+</div></section>
+
+<section id="kak"><div class="wrap">
+  <div class="sec-head"><h2>Как стать клиентом</h2><p>Всего несколько шагов, и мы начнём кормить вашу команду.</p></div>
+  <div class="steps">
+    <div class="step"><h3>Оставьте заявку</h3><p>Расскажите о задачах, мы предложим меню.</p></div>
+    <div class="step"><h3>Согласуем детали</h3><p>Утвердим состав, график и стоимость.</p></div>
+    <div class="step"><h3>Запускаем поставки</h3><p>Каждый день свежие обеды точно вовремя.</p></div>
+    <div class="step"><h3>Получаете отчёт</h3><p>Ежемесячная статистика и обратная связь.</p></div>
+  </div>
+</div></section>
+
+<section class="band" id="partners"><div class="wrap">
+  <div class="sec-head"><h2>Наши партнёры</h2><p>Более 120 компаний выбирают нас каждый день.</p></div>
+  <div class="logos"><div class="ph">{{логотип партнёра}}</div><div class="ph">{{логотип партнёра}}</div><div class="ph">{{логотип партнёра}}</div><div class="ph">{{логотип партнёра}}</div><div class="ph">{{логотип партнёра}}</div></div>
+  <div class="stats">
+    <div class="stat"><b>10+</b><span>лет на рынке</span></div>
+    <div class="stat"><b>120+</b><span>компаний-клиентов</span></div>
+    <div class="stat"><b>97%</b><span>удовлетворённость</span></div>
+    <div class="stat"><b>5000+</b><span>обедов в день</span></div>
+  </div>
+  <!-- Отзывы: пока слоты. Вставить дословные отзывы клиентов, меньше трёх – убрать блок. -->
+  <div class="reviews">
+    <div class="review">{{отзыв клиента 1}}</div><div class="review">{{отзыв клиента 2}}</div><div class="review">{{отзыв клиента 3}}</div>
+  </div>
+</div></section>
+
+<section><div class="wrap split">
+  <div class="ph">{{фото производства}}</div>
+  <div>
+    <h2>Готовим как для себя</h2>
+    <p class="lead" style="margin-top:14px">«Колобок» – современная столовая с собственным производством. Ежедневно готовим более 5000 обедов, используя продукты от локальных поставщиков.</p>
+  </div>
+</div></section>
+
+<section class="band"><div class="wrap">
+  <div class="sec-head"><h2>Наши преимущества</h2><p>Всё продумано для вашего комфорта.</p></div>
+  <div class="benefits">
+    <div class="benefit"><i>1</i><div><h3>Собственная кухня</h3><p>800 м² современного оборудования</p></div></div>
+    <div class="benefit"><i>2</i><div><h3>Сезонные продукты</h3><p>Закупки у фермеров напрямую</p></div></div>
+    <div class="benefit"><i>3</i><div><h3>Доставка по графику</h3><p>Точность до минуты</p></div></div>
+    <div class="benefit"><i>4</i><div><h3>Персональный менеджер</h3><p>Поддержка 24/7</p></div></div>
+    <div class="benefit"><i>5</i><div><h3>Контроль качества</h3><p>Многоступенчатая проверка</p></div></div>
+    <div class="benefit"><i>6</i><div><h3>Гибкие условия</h3><p>Индивидуальный подход к каждому</p></div></div>
+  </div>
+</div></section>
+
+<section class="cta"><div class="wrap">
+  <h2>Готовы начать?</h2>
+  <p>Получите персональное предложение за 15 минут.</p>
+  <button class="btn" data-open="corp">Оставить заявку</button>
+</div></section>
+
+</main>
+<div id="foot"></div>
+<div id="modals"></div>
+<script src="app.js"></script>
+</body>
+</html>
